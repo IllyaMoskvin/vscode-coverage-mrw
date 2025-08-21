@@ -1,0 +1,7 @@
+{
+    "files.exclude": {
+        "src": true
+    },
+    // Scan other folders for tests, not the root
+    "python.testing.unittestEnabled": false,
+}

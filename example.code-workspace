@@ -1,0 +1,34 @@
+{
+    "folders": [
+        // Issue occurs regardless of whether the root folder is enabled
+        // Try commenting it out and re-running the tests
+        {
+            "name": "root",
+            "path": "."
+        },
+        {
+            "name": "foo",
+            "path": "src/foo"
+        },
+        {
+            "name": "bar",
+            "path": "src/bar"
+        }
+    ],
+    "settings": {
+        "python.testing.unittestArgs": [
+            "-v",
+            "-s",
+            ".",
+            "-p",
+            "test_*.py"
+        ],
+        "python.testing.pytestEnabled": false,
+        "python.testing.unittestEnabled": true
+    },
+    "extensions": {
+        "recommendations": [
+            "ms-python.python",
+        ]
+    },
+}
